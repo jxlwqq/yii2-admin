@@ -38,14 +38,20 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
-        /*
         'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
+            'enablePrettyUrl' => true, //对url进行美化
+            'showScriptName' => false,//隐藏index.php
+//            'suffix' => '.html',//后缀
+//            'enableStrictParsing'=>FALSE,//不要求网址严格匹配，则不需要输入rules
             'rules' => [
-            ],
+                // 为路由指定一个别名简化网址
+                '' => 'site',
+                //标准的控制器/方法显示
+                '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+                //加id参数
+                '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+            ]
         ],
-        */
     ],
     'params' => $params,
 ];

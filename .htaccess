@@ -1,0 +1,12 @@
+﻿<IfModule mod_rewrite.c>
+  #Options +FollowSymLinks
+  #IndexIgnore */*
+  RewriteEngine on
+ 
+  # if a directory or a file exists, use it directly
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !=/favicon.ico
+  # otherwise forward it to index.php
+  RewriteRule .* index.php/$0 [PT,L]
+</IfModule>
