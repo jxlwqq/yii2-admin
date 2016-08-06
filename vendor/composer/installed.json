@@ -1129,5 +1129,367 @@
             "theme",
             "yii2"
         ]
+    },
+    {
+        "name": "bower-asset/adminlte",
+        "version": "v2.3.6",
+        "version_normalized": "2.3.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/almasaeed2010/AdminLTE.git",
+            "reference": "be11566d9539370b196ac85f22a6baf9f42c87cb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/be11566d9539370b196ac85f22a6baf9f42c87cb",
+            "reference": "be11566d9539370b196ac85f22a6baf9f42c87cb",
+            "shasum": ""
+        },
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": [
+                "index2.html",
+                "dist/css/AdminLTE.css",
+                "dist/js/app.js",
+                "build/less/AdminLTE.less"
+            ],
+            "bower-asset-ignore": [
+                "/.*",
+                "node_modules",
+                "bower_components",
+                "composer.json",
+                "documentation"
+            ]
+        },
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ],
+        "description": "Admin dashboard and control panel template",
+        "keywords": [
+            "admin",
+            "backend",
+            "bootstrap",
+            "css",
+            "html",
+            "js",
+            "responsive",
+            "template",
+            "theme"
+        ]
+    },
+    {
+        "name": "deesoft/yii2-adminlte",
+        "version": "1.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/deesoft/yii2-adminlte.git",
+            "reference": "a518e361faee1ece1b9ee849a621c64fe922d206"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://packagist.phpcomposer.com/files/deesoft/yii2-adminlte/a518e361faee1ece1b9ee849a621c64fe922d206.zip",
+            "reference": "a518e361faee1ece1b9ee849a621c64fe922d206",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/adminlte": "~2.0",
+            "rmrevin/yii2-fontawesome": "~2.0",
+            "yiisoft/yii2": "~2.0",
+            "yiisoft/yii2-bootstrap": "~2.0"
+        },
+        "time": "2015-07-27 12:27:04",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "dee\\adminlte\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Misbahul Munir",
+                "email": "misbahuldmunir@gmail.com"
+            }
+        ],
+        "description": "yii2 adminlte theme",
+        "keywords": [
+            "AdminLTE",
+            "bootstrap",
+            "css"
+        ]
+    },
+    {
+        "name": "bower-asset/angular-validation",
+        "version": "v1.4.2",
+        "version_normalized": "1.4.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/huei90/angular-validation.git",
+            "reference": "c5e2603e6c107f2fd9154906fe009039a7d6a234"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/huei90/angular-validation/zipball/c5e2603e6c107f2fd9154906fe009039a7d6a234",
+            "reference": "c5e2603e6c107f2fd9154906fe009039a7d6a234",
+            "shasum": ""
+        },
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": "dist/angular-validation.js",
+            "bower-asset-ignore": [
+                "**/.*",
+                "node_modules",
+                "bower_components",
+                "test",
+                "tests"
+            ]
+        },
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ],
+        "description": "Client-side Validation for AngularJS",
+        "keywords": [
+            "angular",
+            "angular validation",
+            "angularjs",
+            "client-side",
+            "validation",
+            "validator"
+        ]
+    },
+    {
+        "name": "bower-asset/angular",
+        "version": "v1.5.8",
+        "version_normalized": "1.5.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/angular/bower-angular.git",
+            "reference": "7e0e546eb6caedbb298c91a9f6bf7de7eeaa4ad2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/angular/bower-angular/zipball/7e0e546eb6caedbb298c91a9f6bf7de7eeaa4ad2",
+            "reference": "7e0e546eb6caedbb298c91a9f6bf7de7eeaa4ad2",
+            "shasum": ""
+        },
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": "./angular.js",
+            "bower-asset-ignore": []
+        },
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ]
+    },
+    {
+        "name": "bower-asset/angular-bootstrap",
+        "version": "0.14.3",
+        "version_normalized": "0.14.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/angular-ui/bootstrap-bower.git",
+            "reference": "b5e11f5861a1591a300e78a9902c1a7e7918d75b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/angular-ui/bootstrap-bower/zipball/b5e11f5861a1591a300e78a9902c1a7e7918d75b",
+            "reference": "b5e11f5861a1591a300e78a9902c1a7e7918d75b",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/angular": ">=1.3.0"
+        },
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": [
+                "./ui-bootstrap-tpls.js"
+            ],
+            "bower-asset-ignore": []
+        },
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ],
+        "description": "Native AngularJS (Angular) directives for Bootstrap.",
+        "keywords": [
+            "angular",
+            "angular-ui",
+            "bootstrap"
+        ]
+    },
+    {
+        "name": "bower-asset/angular-resource",
+        "version": "v1.5.8",
+        "version_normalized": "1.5.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/angular/bower-angular-resource.git",
+            "reference": "26254617a7f9716d80bc2e32117585f33480a4e3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/angular/bower-angular-resource/zipball/26254617a7f9716d80bc2e32117585f33480a4e3",
+            "reference": "26254617a7f9716d80bc2e32117585f33480a4e3",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/angular": "1.5.8"
+        },
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": "./angular-resource.js",
+            "bower-asset-ignore": []
+        },
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ]
+    },
+    {
+        "name": "bower-asset/angular-route",
+        "version": "v1.5.8",
+        "version_normalized": "1.5.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/angular/bower-angular-route.git",
+            "reference": "e96eff424fdd9689061659603ca59470375bf024"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/angular/bower-angular-route/zipball/e96eff424fdd9689061659603ca59470375bf024",
+            "reference": "e96eff424fdd9689061659603ca59470375bf024",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/angular": "1.5.8"
+        },
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": "./angular-route.js",
+            "bower-asset-ignore": []
+        },
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ]
+    },
+    {
+        "name": "deesoft/yii2-angular",
+        "version": "1.3",
+        "version_normalized": "1.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/deesoft/yii2-angular.git",
+            "reference": "97031eb540ac337054f8f8b2acd1f3f03057cadb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://packagist.phpcomposer.com/files/deesoft/yii2-angular/97031eb540ac337054f8f8b2acd1f3f03057cadb.zip",
+            "reference": "97031eb540ac337054f8f8b2acd1f3f03057cadb",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/angular": "~1.3",
+            "bower-asset/angular-bootstrap": "~0.13",
+            "bower-asset/angular-resource": "~1.3",
+            "bower-asset/angular-route": "~1.3",
+            "bower-asset/angular-validation": "~1.3",
+            "yiisoft/yii2": ">=2.0.4"
+        },
+        "time": "2015-09-03 14:43:37",
+        "type": "yii2-extension",
+        "extra": {
+            "bootstrap": "dee\\angular\\Bootstrap",
+            "branch-alias": {
+                "dev-master": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "dee\\angular\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Misbahul Munir",
+                "email": "misbahuldmunir@gmail.com"
+            }
+        ],
+        "description": "Yii2 angular extension",
+        "keywords": [
+            "angularjs",
+            "yii2"
+        ]
+    },
+    {
+        "name": "mdmsoft/yii2-admin",
+        "version": "3.2",
+        "version_normalized": "3.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mdmsoft/yii2-admin.git",
+            "reference": "8d1e133c6efaf013d84692673846824626b62843"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://packagist.phpcomposer.com/files/mdmsoft/yii2-admin/8d1e133c6efaf013d84692673846824626b62843.zip",
+            "reference": "8d1e133c6efaf013d84692673846824626b62843",
+            "shasum": ""
+        },
+        "require": {
+            "deesoft/yii2-adminlte": "~1.0",
+            "deesoft/yii2-angular": "~1.3",
+            "yiisoft/yii2": ">=2.0.6"
+        },
+        "time": "2015-09-05 07:07:03",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-3.master": "3.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "mdm\\admin\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Misbahul Munir",
+                "email": "misbahuldmunir@gmail.com"
+            }
+        ],
+        "description": "RBAC Auth manager for Yii2 ",
+        "keywords": [
+            "admin",
+            "angularjs",
+            "auth",
+            "rbac",
+            "rest",
+            "yii"
+        ]
     }
 ]

@@ -1,0 +1,32 @@
+{
+    "name": "mdmsoft/yii2-admin",
+    "description": "RBAC Auth manager for Yii2 ",
+    "keywords": ["yii", "admin", "auth", "rbac", "angularjs", "rest"],
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/mdmsoft/yii2-admin/issues",
+        "source": "https://github.com/mdmsoft/yii2-admin"
+    },
+    "authors": [
+        {
+            "name": "Misbahul Munir",
+            "email": "misbahuldmunir@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": ">=2.0.6",
+        "deesoft/yii2-angular": "~1.3",
+        "deesoft/yii2-adminlte": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "mdm\\admin\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-3.master": "3.x-dev"
+        }
+    }
+}
