@@ -35,6 +35,7 @@
 //                    ['label' => 'Debug', 'icon' => 'fa fa-dashboard', 'url' => ['/debug']],
 //                    ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
                     ['label' => 'Tables', 'icon' => 'fa fa-dashboard', 'url' => ['/tables']],
+                    ['label' => '文章', 'icon' => 'fa fa-dashboard', 'url' => ['/article']],
                     ['label' => 'Admin', 'icon' => 'fa fa-dashboard', 'url' => ['/admin']],
                     [
                         'label' => 'Same tools',

@@ -24,6 +24,9 @@ use yii\helpers\Json;
  */
 class ActiveForm extends Widget
 {
+    public  $addCssClass = '';
+
+
     /**
      * @var array|string $action the form action URL. This parameter will be processed by [[\yii\helpers\Url::to()]].
      * @see method for specifying the HTTP method for this form.
@@ -194,7 +197,7 @@ class ActiveForm extends Widget
         }
 
         $content = ob_get_clean();
-        echo Html::beginForm($this->action, $this->method, $this->options);
+        echo Html::beginForm($this->action, $this->method, $this->options, $this->addCssClass);
         echo $content;
 
         if ($this->enableClientScript) {

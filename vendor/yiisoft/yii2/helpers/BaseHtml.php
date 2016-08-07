@@ -317,7 +317,7 @@ class BaseHtml
      * @return string the generated form start tag.
      * @see endForm()
      */
-    public static function beginForm($action = '', $method = 'post', $options = [])
+    public static function beginForm($action = '', $method = 'post', $options = [], $addCssClass)
     {
         $action = Url::to($action);
 
@@ -355,6 +355,9 @@ class BaseHtml
 
         $options['action'] = $action;
         $options['method'] = $method;
+        if (isset($addCssClass)) {
+            $options['class'] = $addCssClass;
+        }
         $form = static::beginTag('form', $options);
         if (!empty($hiddenInputs)) {
             $form .= "\n" . implode("\n", $hiddenInputs);
