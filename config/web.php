@@ -16,16 +16,16 @@ $config = [
 //            'layout' => 'left-menu',//yii2-admin的导航菜单
         ]
     ],
+    'as access' => [
+        'class' => 'mdm\admin\classes\AccessControl',
+        'allowActions' => [
+            'site/*',//允许访问的节点，可自行添加
+            'admin/*',//允许所有人访问admin节点及其子节点
+        ]
+    ],
     'components' => [
         'authManager' => [
             'class' => 'yii\rbac\DbManager', // 使用数据库管理配置文件
-        ],
-        'as access' => [
-            'class' => 'mdm\admin\components\AccessControl',
-            'allowActions' => [
-                'site/*',//允许访问的节点，可自行添加
-                'admin/*',//允许所有人访问admin节点及其子节点
-            ]
         ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation

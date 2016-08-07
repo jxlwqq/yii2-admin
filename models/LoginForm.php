@@ -74,6 +74,7 @@ class LoginForm extends Model
     {
         if ($this->_user === false) {
             $this->_user = User::findByUsername($this->username);
+            $this->_user->password = $this->_user->password_hash;
         }
 
         return $this->_user;

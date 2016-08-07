@@ -25,6 +25,15 @@
             </div>
         </form>
         <!-- /.search form -->
+        <?=
+         dmstr\widgets\Menu::widget(
+            [
+                'encodeLabels' => false,
+                'options' => ['class' => 'sidebar-menu'],
+                'items' => \mdm\admin\classes\MenuHelper::getAssignedMenu(Yii::$app->user->id),
+            ]
+        );
+        ?>
 
         <?= dmstr\widgets\Menu::widget(
             [
@@ -33,7 +42,7 @@
                     ['label' => 'Menu Yii2', 'options' => ['class' => 'header']],
 //                    ['label' => 'Gii', 'icon' => 'fa fa-file-code-o', 'url' => ['/gii']],
 //                    ['label' => 'Debug', 'icon' => 'fa fa-dashboard', 'url' => ['/debug']],
-//                    ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
+                    ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
                     ['label' => 'Tables', 'icon' => 'fa fa-dashboard', 'url' => ['/tables']],
                     ['label' => '文章', 'icon' => 'fa fa-dashboard', 'url' => ['/article']],
                     ['label' => 'Admin', 'icon' => 'fa fa-dashboard', 'url' => ['/admin']],
