@@ -5,8 +5,28 @@ $params = require(__DIR__ . '/params.php');
 $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log'],
+    'language'=>'zh-CN',
+    'bootstrap' => [
+        'log',
+        'admin',
+    ],
+    'modules' => [
+        'admin' => [
+            'class' => 'mdm\admin\Module',
+//            'layout' => 'left-menu',//yii2-admin的导航菜单
+        ]
+    ],
     'components' => [
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager', // 使用数据库管理配置文件
+        ],
+        'as access' => [
+            'class' => 'mdm\admin\components\AccessControl',
+            'allowActions' => [
+                'site/*',//允许访问的节点，可自行添加
+                'admin/*',//允许所有人访问admin节点及其子节点
+            ]
+        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'u4MHNPRI_8oJiW6bt5noiDVnr_LZeSsN',
@@ -51,6 +71,18 @@ $config = [
                 //加id参数
                 '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
             ]
+        ],
+        'i18n' => [
+            'translations' => [
+                'app*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@app/messages',
+                    'sourceLanguage' => 'zh-cn',
+                    'fileMap' => [
+                        'app' => 'app.php',
+                    ],
+                ],
+            ],
         ],
     ],
     'params' => $params,
