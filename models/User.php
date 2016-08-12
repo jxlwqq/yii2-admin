@@ -4,22 +4,22 @@ namespace app\models;
 
 class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
 {
-    public $id;
-    public $username;
-    public $password;
-    public $authKey;
-    public $accessToken;
 
-    private static $users = [
-//        '100' => [
-//            'id' => '100',
-//            'username' => 'admin',
-//            'password' => 'admin',
-//            'authKey' => 'test100key',
-//            'accessToken' => '100-token',
-//        ],
+//    public $id;
+//    public $username;
+//    public $password;
+//    public $authKey;
+//    public $accessToken;
 
-    ];
+    public function init(){
+
+//        $this->id = $this->id;
+//        $this->username = $this->username;
+//        $this->password = $this->password_hash;
+//        $this->authKey = $this->auth_key;
+//        $this->accessToken = $this->password_reset_token;
+    }
+
 
 
     /**
@@ -76,7 +76,7 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
      */
     public function getAuthKey()
     {
-        return $this->authKey;
+        return $this->auth_key;
     }
 
     /**
@@ -84,7 +84,7 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
      */
     public function validateAuthKey($authKey)
     {
-        return $this->authKey === $authKey;
+        return $this->auth_key === $authKey;
     }
 
     /**
@@ -95,6 +95,8 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
      */
     public function validatePassword($password)
     {
-        return $this->password === $password;
+//         \Yii::$app->getSecurity()->generatePasswordHash($password);//生成密码HASH
+
+        return \Yii::$app->getSecurity()->validatePassword($password, $this->password_hash);//校验hash密码
     }
 }

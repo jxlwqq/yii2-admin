@@ -11,6 +11,11 @@ use app\models\ContactForm;
 
 class SiteController extends Controller
 {
+    function init()
+    {   $this->defaultAction = 'login';
+        $this->layout="main-login";
+    }
+
     /**
      * @inheritdoc
      */
@@ -73,7 +78,6 @@ class SiteController extends Controller
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
-
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->goBack();

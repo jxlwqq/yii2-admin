@@ -2,8 +2,8 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=dna_speaking',
-    'username' => 'root',
-    'password' => '123456',
+    'dsn' => 'mysql:host=57adfc0134884.gz.cdb.myqcloud.com:15498;dbname=dna_speaking',
+    'username' => 'cdb_outerroot',
+    'password' => 'dna_speaking',
     'charset' => 'utf8',
 ];

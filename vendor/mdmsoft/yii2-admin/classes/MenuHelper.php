@@ -64,7 +64,7 @@ class MenuHelper
      * @param boolean  $refresh
      * @return array
      */
-    public static function getAssignedMenu($userId, $root = null, $callback = null, $refresh = false)
+    public static function getAssignedMenu($userId, $root = null, $callback = null, $refresh = true)
     {
         /* @var $manager \yii\rbac\BaseManager */
         $manager = Yii::$app->getAuthManager();

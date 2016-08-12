@@ -53,7 +53,7 @@ return [
     'The requested view "{name}" was not found.' => '所请求的视图不存在"{name}"。',
     'The verification code is incorrect.' => '验证码不正确。',
     'Total <b>{count, number}</b> {count, plural, one{item} other{items}}.' => '总计<b>{count, number}</b>条数据。',
-    'Unable to verify your data submission.' => '您提交的数据无法被验证。',
+    'F' => '您提交的数据无法被验证。',
     'Unknown command "{command}".' => '未知的命令 "{command}"。',
     'Unknown option: --{name}' => '未知的选项：--{name}',
     'Update' => '更新',

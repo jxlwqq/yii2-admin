@@ -6,6 +6,7 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'language'=>'zh-CN',
+    'homeUrl'=> ['/tables/index'],//首页
     'bootstrap' => [
         'log',
         'admin',
@@ -19,8 +20,7 @@ $config = [
     'as access' => [
         'class' => 'mdm\admin\classes\AccessControl',
         'allowActions' => [
-            'site/*',//允许访问的节点，可自行添加
-            'admin/*',//允许所有人访问admin节点及其子节点
+            'site/login',//允许访问的节点，可自行添加
         ]
     ],
     'components' => [
@@ -35,8 +35,11 @@ $config = [
             'class' => 'yii\caching\FileCache',
         ],
         'user' => [
+            'class' => 'yii\web\User',
             'identityClass' => 'app\models\User',
             'enableAutoLogin' => true,
+            'idParam' => '_user',
+            'identityCookie'    => ['name'=>'_u','httpOnly' => true],
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
